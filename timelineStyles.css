@@ -1,0 +1,147 @@
+
+main {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+
+    background-image: url("img/winter.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#timelineContainer{
+
+    background-color: chocolate;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+#timelineGrid{
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    width: 100%;
+    height: 100%;
+    
+
+
+}
+
+.segment{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.line {
+
+    background-color: white;
+    width: 100%;
+    height: 0.5vw;
+    display: flex;
+    align-items: center;
+
+}
+
+#searchbar {
+
+    align-items: center;
+
+}
+
+.circle {
+
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: white;
+    /* position: relative;
+    top: -0.75vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.circle-active {
+
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
+
+}
+
+#currentTimeIndicator{
+
+    background-color: yellow;
+    position: absolute;
+    height: 90%;
+    width: 0.7vw;
+
+}
+
+.icon {
+
+    width: 1.5vw;
+    height: auto;
+    margin: 1.5vw;
+
+
+}
+
+#createMore {
+
+    width: 3.5vh;
+    height: 3.5vh;
+    padding: 1.5vh;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: darkred;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh;
+
+}
+
+.inputBox {
+
+    width: 10vh;
+    height: 6vh;
+    padding: 1.5vh;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: lightcoral;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh;
+    box-shadow: 5px 5px 10px rgba(8, 8, 8, 0.548);
+    position: absolute !important;
+    /* z-index: 200; */
+
+}
+
+.inputBox textarea {
+
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    resize: none;
+    border: none;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+
+}

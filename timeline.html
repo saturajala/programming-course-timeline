@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="timelineStyles.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div id="headerContainer" class="gridRow">
+
+            <div id="headerTexts">
+
+                <h1>TIMELINE</h1>
+                <p id="currentTimeDisplay">Time Right Now</p>
+
+            </div>
+
+        </div>
+        <div id="timelineContainer" class="gridRow">
+
+            <div id="currentTimeIndicator">
+
+            </div>
+
+            <div id="timelineGrid">
+
+            </div>
+
+        </div>
+        <div id="itemContainer" class="gridRow">
+
+            <div id="contentBox">
+
+                <div id="createMore">+</div>
+
+                <div class="inputBox" draggable="true">
+
+                    <textarea>Hello</textarea>
+
+                </div>
+
+            </div>
+
+            <div id="droppable">
+                <p>Drop here!</p>
+            </div>
+
+            <img class="icon" data-tags="hobby music listening note" data-id="1" draggable="true" src="svg\iconmonstr-audio-20.svg">
+            <img class="icon" data-tags="hobby sports badminton" data-id="2" draggable="true" src="svg\iconmonstr-badminton-1.svg">
+            <img class="icon" data-tags="money savings shopping" data-id="3" draggable="true" src="svg\iconmonstr-banknote-13.svg">
+            <img class="icon" data-tags="hobby cycling bike exercise" data-id="4" draggable="true" src="svg\iconmonstr-bicycle-5.svg">
+            <img class="icon" data-tags="" data-id="5" draggable="true" src="svg\iconmonstr-book-25.svg">
+            <img class="icon" data-tags="" data-id="6" draggable="true" src="svg\iconmonstr-bus-5.svg">
+            <img class="icon" data-tags="" data-id="7" draggable="true" src="svg\iconmonstr-candy-1.svg">
+            <img class="icon" data-tags="" data-id="8" draggable="true" src="svg\iconmonstr-candy-5.svg">
+            <img class="icon" data-tags="" data-id="9" draggable="true" src="svg\iconmonstr-candy-17.svg">
+            <img class="icon" data-tags="" data-id="10" draggable="true" src="svg\iconmonstr-candy-27.svg">
+            <img class="icon" data-tags="" data-id="11" draggable="true" src="svg\iconmonstr-candy-31.svg">
+            <img class="icon" data-tags="" data-id="12" draggable="true" src="svg\iconmonstr-car-1.svg">
+            <img class="icon" data-tags="" data-id="13" draggable="true" src="svg\iconmonstr-cat-5.svg">
+            <img class="icon" data-tags="" data-id="14" draggable="true" src="svg\iconmonstr-clothing-2.svg">
+            <img class="icon" data-tags="" data-id="15" draggable="true" src="svg\iconmonstr-clothing-8.svg">
+            <img class="icon" data-tags="" data-id="16" draggable="true" src="svg\iconmonstr-clothing-14.svg">
+            <img class="icon" data-tags="" data-id="17" draggable="true" src="svg\iconmonstr-construction-1.svg">
+            <img class="icon" data-tags="" data-id="18" draggable="true" src="svg\iconmonstr-construction-4.svg">
+            <img class="icon" data-tags="" data-id="19" draggable="true" src="svg\iconmonstr-construction-8.svg">
+            <img class="icon" data-tags="" data-id="20" draggable="true" src="svg\iconmonstr-customer-5.svg">
+            <img class="icon" data-tags="" data-id="21" draggable="true" src="svg\iconmonstr-cut-1.svg">
+            <img class="icon" data-tags="" data-id="22" draggable="true" src="svg\iconmonstr-delivery-13.svg">
+            <img class="icon" data-tags="" data-id="23" draggable="true" src="svg\iconmonstr-eat-1.svg">
+            <img class="icon" data-tags="" data-id="24" draggable="true" src="svg\iconmonstr-edit-1.svg">
+            <img class="icon" data-tags="" data-id="25" draggable="true" src="svg\iconmonstr-fast-food-1.svg">
+            <img class="icon" data-tags="" data-id="26" draggable="true" src="svg\iconmonstr-fast-food-3.svg">
+            <img class="icon" data-tags="" data-id="27" draggable="true" src="svg\iconmonstr-fast-food-11.svg">
+            <img class="icon" data-tags="" data-id="28" draggable="true" src="svg\iconmonstr-fast-food-21.svg">
+            <img class="icon" data-tags="" data-id="29" draggable="true" src="svg\iconmonstr-fish-1.svg">
+            <img class="icon" data-tags="" data-id="30" draggable="true" src="svg\iconmonstr-gamepad-3.svg">
+            <img class="icon" data-tags="" data-id="31" draggable="true" src="svg\iconmonstr-generation-2.svg">
+            <img class="icon" data-tags="" data-id="32" draggable="true" src="svg\iconmonstr-generation-3.svg">
+            <img class="icon" data-tags="" data-id="33" draggable="true" src="svg\iconmonstr-generation-5.svg">
+            <img class="icon" data-tags="" data-id="34" draggable="true" src="svg\iconmonstr-generation-6.svg">
+            <img class="icon" data-tags="" data-id="35" draggable="true" src="svg\iconmonstr-generation-9.svg">
+            <img class="icon" data-tags="" data-id="36" draggable="true" src="svg\iconmonstr-generation-11.svg">
+            <img class="icon" data-tags="" data-id="37" draggable="true" src="svg\iconmonstr-generation-12.svg">
+            <img class="icon" data-tags="" data-id="38" draggable="true" src="svg\iconmonstr-generation-13.svg">
+            <img class="icon" data-tags="" data-id="39" draggable="true" src="svg\iconmonstr-generation-16.svg">
+            <img class="icon" data-tags="" data-id="40" draggable="true" src="svg\iconmonstr-laptop-4.svg">
+            <img class="icon" data-tags="" data-id="41" draggable="true" src="svg\iconmonstr-map-10.svg">
+            <img class="icon" data-tags="" data-id="42" draggable="true" src="svg\iconmonstr-marketing-24.svg">
+            <img class="icon" data-tags="" data-id="43" draggable="true" src="svg\iconmonstr-paintbrush-6.svg">
+            <img class="icon" data-tags="" data-id="44" draggable="true" src="svg\iconmonstr-paper-plane-1.svg">
+            <img class="icon" data-tags="" data-id="45" draggable="true" src="svg\iconmonstr-party-9.svg">
+            <img class="icon" data-tags="" data-id="46" draggable="true" src="svg\iconmonstr-party-13.svg">
+            <img class="icon" data-tags="" data-id="47" draggable="true" src="svg\iconmonstr-party-17.svg">
+            <img class="icon" data-tags="" data-id="48" draggable="true" src="svg\iconmonstr-picture-17.svg">
+            <img class="icon" data-tags="" data-id="49" draggable="true" src="svg\iconmonstr-product-12.svg">
+            <img class="icon" data-tags="" data-id="50" draggable="true" src="svg\iconmonstr-school-2.svg">
+            <img class="icon" data-tags="" data-id="51" draggable="true" src="svg\iconmonstr-school-3.svg">
+            <img class="icon" data-tags="" data-id="52" draggable="true" src="svg\iconmonstr-school-9.svg">
+            <img class="icon" data-tags="" data-id="53" draggable="true" src="svg\iconmonstr-school-10.svg">
+            <img class="icon" data-tags="" data-id="54" draggable="true" src="svg\iconmonstr-shop-7.svg">
+            <img class="icon" data-tags="" data-id="55" draggable="true" src="svg\iconmonstr-soccer-1.svg">
+            <img class="icon" data-tags="" data-id="56" draggable="true" src="svg\iconmonstr-tablet-5.svg">
+            <img class="icon" data-tags="" data-id="57" draggable="true" src="svg\iconmonstr-television-2.svg">
+            <img class="icon" data-tags="" data-id="58" draggable="true" src="svg\iconmonstr-time-7.svg">
+            <img class="icon" data-tags="" data-id="59" draggable="true" src="svg\iconmonstr-time-8.svg">
+            <img class="icon" data-tags="" data-id="60" draggable="true" src="svg\iconmonstr-time-16.svg">
+            <img class="icon" data-tags="" data-id="61" draggable="true" src="svg\iconmonstr-time-18.svg">
+            <img class="icon" data-tags="" data-id="62" draggable="true" src="svg\iconmonstr-time-24.svg">
+            <img class="icon" data-tags="" data-id="63" draggable="true" src="svg\iconmonstr-weather-2.svg">
+            <img class="icon" data-tags="" data-id="64" draggable="true" src="svg\iconmonstr-weather-6.svg">
+            <img class="icon" data-tags="" data-id="65" draggable="true" src="svg\iconmonstr-weather-67.svg">
+            <img class="icon" data-tags="" data-id="66" draggable="true" src="svg\iconmonstr-weather-114.svg">
+            <img class="icon" data-tags="" data-id="67" draggable="true" src="svg\iconmonstr-video-6.svg">
+            <img class="icon" data-tags="" data-id="68" draggable="true" src="svg\iconmonstr-video-8.svg">
+            <img class="icon" data-tags="" data-id="69" draggable="true" src="svg\iconmonstr-adhesive-bandage-9.svg">
+            <img class="icon" data-tags="" data-id="70" draggable="true" src="svg\iconmonstr-airport-5 (1).svg">
+            <img class="icon" data-tags="" data-id="71" draggable="true" src="svg\iconmonstr-airport-5.svg">
+            <img class="icon" data-tags="" data-id="72" draggable="true" src="svg\iconmonstr-airport-11.svg">
+            <img class="icon" data-tags="" data-id="73" draggable="true" src="svg\iconmonstr-airport-14.svg">
+            <img class="icon" data-tags="" data-id="74" draggable="true" src="svg\iconmonstr-airport-20.svg">
+
+            <div id="searchbar">
+            <button id="save" type="button">Save</button>
+            <button id="reset" type="button">Reset</button>
+
+            <input type="text" id="search">
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+    <script>
+
+        for (let i = 0; i < 24; i++) {
+
+            $("#timelineGrid").append('<div class="segment">' + i + '</div>');
+
+        }
+
+        $(".segment").each(function (i) {
+
+            $(this).html('<div class="line"><div class="circle">' + i + '</div></div>')
+
+        }
+
+
+        )
+
+        //we need to take the current width of the timeline and divide with 24 
+        //and then divive that with 60 and then divide that with 60 to break it into seconds
+
+        let timelineContainerWidth = $("#timelineContainer").width();
+        let calculatedMovement = timelineContainerWidth / 24 / 60 / 60;
+        // console.log(calculatedMovement);
+
+
+
+        setInterval(moveCTI, 1000);
+
+        function moveCTI() {
+
+            let date1 = new Date();
+            let date2 = new Date();
+            let secSinceMidnight = (date1 - date2.setHours(0, 0, 0, 0)) / 1000;
+            //console.log(secSinceMidnight);
+
+            $("#currentTimeDisplay").html(date1.toLocaleString('fi-FI'));
+
+            let calculatedPosition = secSinceMidnight * calculatedMovement;
+
+            $("#currentTimeIndicator").css({ left: calculatedPosition + 'px' })
+
+        }
+
+        $('.icon').draggable({
+
+        });
+
+        $('.inputBox').draggable().resizable();
+
+        $('#createMore').click(createInputBox);
+
+        function createInputBox() {
+
+            $('#contentBox').append('<div class="inputBox" draggable="true"><textarea>Hello</textarea></div>');
+            $('.inputBox').draggable().resizable();
+
+
+            // TASK 1: 
+            let amountOfBoxes = $('#contentBox .inputBox').length;
+
+            // console.log(amountOfBoxes);
+
+            // I first tried to access the first element but then I realised, that when I add
+            // a new inputBox, it becomes the last one.
+
+            $('#contentBox .inputBox:last').css({ "left": + amountOfBoxes * 20 + "px" });
+
+
+        }
+
+        // TASK 2:
+
+        /* 
+        Spring: March 2, April 3, May 4
+        Summer: June 5, July 6, August 7
+        Autumn: September 8, October 9, November 10
+        Winter: December 11, January 0, February 1
+         */
+
+        let currentMonth = new Date().getMonth();
+
+
+        if (currentMonth === 2 || currentMonth === 3 || currentMonth === 4) {
+            $('main').css({ "background-image": "url('img/spring.jpg')" });
+
+        }
+
+        else if (currentMonth === 5 || currentMonth === 6 || currentMonth === 7) {
+            $('main').css({ "background-image": "url('img/summer.jpg')" });
+        }
+
+        else if (currentMonth === 8 || currentMonth === 9 || currentMonth === 10) {
+            $('main').css({ "background-image": "url('img/autumn.jpg')" });
+        }
+
+        else {
+            $('main').css({ "background-image": "url('img/winter.jpg')" });
+        }
+
+
+
+        $('#save').click(storePositions);
+        $('#reset').click(resetPositions);
+
+        function storePositions() {
+
+            //object
+            let positions = {};
+
+            //calling a unnamed function
+            $('.icon').each(function () {
+
+                positions[$(this).data('id')] = $(this).offset(); //storing the location of current icon to object, using offset()
+                console.log($(this).offset());
+
+            });
+
+            localStorage.setItem('iconPositions', JSON.stringify(positions));
+
+        };
+
+        function resetPositions() {
+
+            localStorage.removeItem('iconPositions');
+            location.reload();
+
+        };
+
+        $(document).ready(function () {
+
+            let positions = localStorage.getItem('iconPositions');
+
+            //if positions is NOT empty
+            if (positions) {
+
+                //parse positions back to an object
+                positions = JSON.parse(positions);
+
+            };
+
+            //looping through each id's of positions object
+            for (let id in positions) {
+
+                $('[data-id="' + id + '"]').offset(positions[id]);
+
+            }
+
+        });
+
+        // ******************************************
+        // *********** COLLISION TASK ***************
+        // ******************************************
+
+
+        let circles = document.getElementsByClassName("circle").length;
+
+        //Check if two divs collide
+
+        let $div1 = 0;
+        let $div2 = 0;
+
+        function collision($div1, $div2) {
+            var x1 = $div1.offset().left;
+            var y1 = $div1.offset().top;
+            var h1 = $div1.outerHeight(true);
+            var w1 = $div1.outerWidth(true);
+            var b1 = y1 + h1;
+            var r1 = x1 + w1;
+            var x2 = $div2.offset().left;
+            var y2 = $div2.offset().top;
+            var h2 = $div2.outerHeight(true);
+            var w2 = $div2.outerWidth(true);
+            var b2 = y2 + h2;
+            var r2 = x2 + w2;
+
+            if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
+            return true;
+        }
+
+
+        window.setInterval(function () {
+
+
+            for (i = 0; i <= circles; i++) {
+
+                if (collision($('.circle').eq(i), $('#currentTimeIndicator')) === true) {
+                    $('.circle').eq(i).addClass("circle-active");
+                    //console.log("Colliding");
+                }
+
+                else {
+                    $('.circle').eq(i).removeClass("circle-active");
+                    // console.log("Not colliding");
+                }
+
+            }
+
+        }), 2000;
+
+
+        // Handle the search input box
+
+        $('#search').keyup(function () {
+
+            let inputValue = $(this).val().toLowerCase();
+            console.log(inputValue);
+            $('.icon').hide();
+            $('.icon').each(function(){
+
+                let tags = $(this).data("tags");
+
+                // if inputValue is NOT -1
+                if(tags.indexOf(inputValue)!=-1) {
+                    //console.log(tags);
+
+                    $(this).show();
+
+                }
+
+/*                 if($(this).hasClass(inputValue)) {
+
+                    $(this).show();
+
+                } */
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
